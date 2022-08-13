@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product View</title>
+
+    <!-----custom css link------>
+    <link rel="stylesheet" href="./assets/css/singleProduct.css" />
+
+    <!-----google font link------>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-----custom icons---->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- another google font icon link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <!-- Bootstrap CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!------script js------>
+    <script src="./assets/js/singleProduct.js" defer></script>
+  </head>
+  <body>
+    
+  <!-- Header Start -->
+  <header>
+    <div class="top_nav_section container-fluid">
+
+        <!-----Announcement Text----->
+        <div class="announcement_text">
+            <span>Due to the COVID 19 epidemic, orders may be processed with a slight delay</span>
+        </div>
+
+
+        <div class="top_nav_items">
+
+            <!-----Language Dropdown----->
+            <div class="language_dropdown">
+                <div class="dropdown-center">
+                    <button class="language_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-----Money Dropdown----->
+            <div class="money_dropdown">
+                <div class="dropdown-center">
+                    <button class="money_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        $ USD
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> $ USD</a></li>
+                        <li><a class="dropdown-item" href="#"> $ EUR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-----Account Dropdown----->
+            <div class="account_dropdown">
+                <div class="dropdown-center">
+                    <button class="account_btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fas fa-user"></i> My Account
+                    </button>
+                    <div class="dropdown-menu">
+
+                        <input type="text" name="username" id="" placeholder="Username">
+                        <br>
+                        <input type="password" name="password" id="" placeholder="Password">
+                        <br>
+                        <input class="account_login_btn" type="submit" value="Log in">
+
+                        <h6><a href="">Forgot password?</a></h6>
+                        <h6>Don't have account yet? <a href="">Register here</a></h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</header>
+  <!-- Header End -->
+      
+  <main class="container mt-5">
+    <!-- Path of products -->
+    <!-- breadcrumb -->
+  <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <a href="#">Shop</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <a href="#">Products</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <a href="#">Vitamin D3 (1000 IU) Cap X</a>
+      </li>
+    </ol>
+  </nav>
+    <!-- product view -->
+    <div class="product_view_container mt-5">
+      <!-- view cart option -->
+      <!-- view specific product start at here -->
+        <div class="row g-4">
+        <!-- view product details start here -->
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                    <!-- view cart message here when add to cart button press -->
+                    <div class="view_cart_message d-none d-flex align-items-center mb-2">
+                      <button class="me-4"><a href="#">View cart</a></button>
+                      <div>"Vitamin D3 (1000 IU) Cap X" has been added to your cart.</div>
+                    </div>
+                    <!-- Product Image, title, rating, review count, description, price tag -->
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <!-- Product img -->
+                          <div class="product_img w-100">
+                            <img src="./assets/images/products/product53-300x300.jpg" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <!-- product title and review -->
+                          <div class="product_summary">
+                            <div class="product_title_and_review">
+                              <div class="product_title">
+                                <h1>Vitamin D3 (1000 IU) Cap X</h1>
+                              </div>
+                              <!-- rating starts  -->
+                              <div class="product_rating_review">
+                                <div class="rating me-2">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </div>
+                                <a href="#">(3 customers review)</a>
+                              </div>
+                            </div>
+                            <hr class="horizontal_line" />
+                            <!-- product details -->
+                            <div class="product_details">
+                              <ul class="ps-0">
+                                <li>
+                                  <i class="fas fa-solid fa-check mb-3 pe-2"></i>
+                                  <span>3 cleaning programs</span>
+                                </li>
+                                <li>
+                                  <i class="fas fa-solid fa-check mb-3 pe-2"></i>
+                                  <span>Digital display</span>
+                                </li>
+                                <li>
+                                  <i class="fas fa-solid fa-check mb-3 pe-2"></i>
+                                  <span>Memory for 1 user</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr class="horizontal_line" />
+                            <!-- product bulk buying cost -->
+                            <table class="table">
+                              <thead class="bg-light">
+                                <tr>
+                                  <th scope="col">Quantity</th>
+                                  <th scope="col" class="text-center">1</th>
+                                  <th scope="col" class="text-center">10</th>
+                                </tr>
+                              </thead>
+                              <tbody class="table_body">
+                                <tr>
+                                  <td>Price Each</td>
+                                  <td class="text-center">$30.00-$40.00</td>
+                                  <td class="text-center">$350</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- product price -->
+                            <div class="product_price discount_price d-flex align-items-baseline">
+                              <div class="discount_price d-flex flex-column">
+                                <small>Discount Price</small>
+                                <p class="fs-4">$30.00-$40.00</p>
+                              </div>
+                              <div class="regular_price d-flex flex-column ms-3">
+                                <small>Regular price</small>
+                                <del class="fs-4 fw-bold text-danger">$60.00</del>
+                              </div>
+                            </div>
+                            <!-- add to cart and quantity -->
+                            <div class="quantity_and_cart gap-1">
+                              <div class="product_quantity d-flex justify-space-between align-items-center gap-1">
+                                <!-- product quantity input and btn -->
+                                <button class="p-1 border"><span>-</span></button>
+                                <input
+                                  class="p-2 text-center border rounded-pill w-75"
+                                  type="number"
+                                  name="quantity"
+                                  id="quantity"
+                                  value="1"
+                                />
+                                <button class="p-1 border"><span>+</span></button>
+                              </div>
+                              <!-- add to cart btn -->
+                                <button class="border rounded-pill d-flex align-items-center justify-content-center p-2" id="addToCart">
+                                  <span class="material-symbols-outlined">
+                                  shopping_cart
+                                  </span>
+                                <span>Add to cart</span>
+                              </button>
+                            </div>
+                            <!-- wishlist and ask about product  -->
+                            <div class="wishlist_and_ask_product d-flex gap-3 mt-3">
+                              <a href="#"
+                                ><i class="fas fa-regular fa-heart"></i> Add to wishlist</a
+                              >
+                              <a href="#"
+                                ><i class="fas fa-solid fa-envelope"></i> Ask about product</a
+                              >
+                            </div>
+                            <!-- SKU, Categories And Tag -->
+                            <div class="sku_categories_tag">
+                              <ul class="ps-0 mt-3">
+                                <li><span>SKU:</span> 537705</li>
+                                <li><span>Categories:</span> Supplements, Vitamins</li>
+                                <li><span>Tag:</span> Vitamins</li>
+                              </ul>
+                            </div>
+                            <!-- Social icons -->
+                            <div class="social_icons d-flex">
+                              <a
+                                href="#"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="Facebook"
+                              >
+                                <i class="fab fa-facebook" style="color: #4267b2"></i>
+                              </a>
+                              <a
+                                href="#"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="Twitter"
+                              >
+                                <i class="fab fa-twitter" style="color: #00acee"></i>
+                              </a>
+                              <a
+                                href="#"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="Linkedin"
+                              >
+                                <i class="fab fa-linkedin-in" style="color: #00acee"></i>
+                              </a>
+                              <a
+                                href="#"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="WhatsApp"
+                              >
+                                <i class="fab fa-whatsapp-square" style="color: #34b7f1"></i>
+                              </a>
+                              <a
+                                href="#"
+                                data-toggle="tooltip"
+                                data-placement="top"
+                                title="Telegram"
+                              >
+                                <i class="fab fa-telegram" style="color: #0088cc"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- product description and review -->
+                      <div class="product_description_review container mt-5">
+                        <!-- product description and review switching button  -->
+                        <div class="btn_part mb-3">
+                          <span id="description" class="activeClass">Description</span>
+                          <!-- review number should be dynamic at here -->
+                          <span id="review">Reviews (3)</span>
+                        </div>
+                        <!-- view data of product description and review -->
+                        <div class="button_data_view">
+                          <!-- description -->
+                          <div class="description_content">
+                            <h2 class="description_title">About this medication</h2>
+                            <!-- product details -->
+                            <p>
+                              Leverage agile frameworks to provide a robust synopsis for high
+                              level overviews. Iterative approaches to corporate strategy
+                              foster collaborative thinking to further the overall value
+                              proposition. Organically grow the holistic world view of
+                              disruptive innovation via workplace diversity and empowerment.
+                              Bring to the table win-win survival strategies to ensure
+                              proactive domination. At the end of the day, going forward, a
+                              new normal that has evolved from generation X is on the runway
+                              heading towards a streamlined cloud solution. User generated
+                              content in real-time will have multiple touch points for
+                              offshoring.
+                            </p>
+                            <!-- product details -->
+                            <div class="product_details">
+                            <ul class="ps-0">
+                              <li>
+                                <i class="fas fa-solid fa-check mb-3 pe-2"></i>
+                                <span>3 cleaning programs</span>
+                              </li>
+                              <li>
+                                <i class="fas fa-solid fa-check mb-3 pe-2"></i>
+                                <span>Digital display</span>
+                              </li>
+                              <li>
+                                <i class="fas fa-solid fa-check mb-3 pe-2"></i>
+                                <span>Memory for 1 user</span>
+                              </li>
+                            </ul>
+                            </div>
+                          </div>
+                          <!-- reviews -->
+                          <div class="reviews d-none">
+                              <div class="row border rounded p-3 align-items-center mb-2">
+                                <div class="col">
+                                  <p class="fw-bold">Enovathemes</p>
+                                  <span>December 8, 2021</span>
+                                </div>
+                                <div class="col">
+                                  Everything is perfect. I would recommend!
+                                </div>
+                                <div class="col">
+                                  <div class="rating me-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row border rounded p-3 align-items-center mb-2">
+                                <div class="col">
+                                  <p class="fw-bold">Enovathemes</p>
+                                  <span>December 8, 2021</span>
+                                </div>
+                                <div class="col">
+                                  Everything is perfect. I would recommend!
+                                </div>
+                                <div class="col">
+                                  <div class="rating me-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row border rounded p-3 align-items-center mb-2">
+                                <div class="col">
+                                  <p class="fw-bold">Enovathemes</p>
+                                  <span>December 8, 2021</span>
+                                </div>
+                                <div class="col">
+                                  Everything is perfect. I would recommend!
+                                </div>
+                                <div class="col">
+                                  <div class="rating me-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- reviews pagination start -->
+                              <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-end">
+                                  <li class="page-item disabled">
+                                    <a class="page-link fw-bold" href="#" tabindex="-1">Previous</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link text-primary fw-bold" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link text-primary fw-bold" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link text-primary fw-bold" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link text-primary fw-bold" href="#">Next</a>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <!-- reviews pagination end -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- related product slider -->
+                      <h2 class="text-danger">Ferdous vai will add the slider of products..............!</h2>
+                    </div>
+                    <!--  you may like also side product section starts here -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 product_sidebar">
+                      <h4>You May Also Like</h4>
+                      <div class="single_product_sidebar">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mr-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mr-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mr-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-5 sidebar_column">
+                          <div class="s_f_p_content">
+                              <div class="featured_product_img">
+                                  <img class="featured_product_image" src="./assets/images/products/product20-300x300.jpg"
+                                      alt="">
+                                  <div class="featured_product_tag">
+                                      <button><a href="">Sale</a></button>
+                                  </div>
+                              </div>
+                
+                              <div class="featured_product_detail">
+                                  <span>Supplements</span>, <span>Vitamins</span>
+                                  <h4>Vitamin C 500mg</h4>
+                                  <h5 class="featured_product_price">$16.00 - $35.00</h5>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  you may like also side product section ends here -->
+
+        <!-- view specific product end at here -->
+        </div>
+      </div>
+  </main>
+  <!-----Footer Start--->
+  <footer>
+    <!-----Newsletter Section Start------>
+    <div class="newsletter_section container-fluid">
+      <h1>Subscribe</h1>
+      <h4>$15 OFF on your first order of $199 or more</h4>
+
+      <h6>Sign up for our Email Newsletter</h6>
+
+      <div class="subscribe_section">
+        <form action="" method="">
+          <input type="email" name="" id="" placeholder="Type email..." />
+          <select name="" id="">
+            <option value="type of business">Type Of Business</option>
+            <option value="auction">Auction</option>
+            <option value="automotive Other">Automotive Other</option>
+            <option value="autobody">Autoboy</option>
+            <option value="distributer">Distributer</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="new car (1-4 location)">
+              New Car (1-4 Location)
+            </option>
+            <option value="new car (5 + locations)">
+              New Car (5 + Locations)
+            </option>
+            <option value="rv/motor home dealer">Rv/Motor Home Dealer</option>
+            <option value="service/ repair facility">
+              Service/ Repair Facility
+            </option>
+            <option value="tire dealer">Tire Dealer</option>
+            <option value="used car (1-4 location)">
+              Used Car (1-4 Location)
+            </option>
+            <option value="used car (5+ location)">
+              Used Car (5+ Location)
+            </option>
+            <option value="other">Other</option>
+          </select>
+
+          <button class="newsletter_submitBtn">
+            <i class="fas fa-paper-plane"></i> Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-----Newsletter Section End------>
+
+    <!-----Footer Menubar Section Start------>
+    <div class="footer_menubar container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 company_info">
+          <div class="footer_menu_logo">
+            <img
+              class="footer_menu_logoImg"
+              src="/assets/images/logo/logo.png"
+              alt=""
+            />
+          </div>
+
+          <div class="company_address">
+            <h6 class="pt-4">2543 Millennium Drive</h6>
+            <h6>Elgin, IL 60124</h6>
+
+            <p>Cell</p>
+            <h6><i class="fas fa-mobile"></i> 626-423-2660</h6>
+            <h6><i class="fas fa-mobile"></i> 914-928-8286</h6>
+
+            <p>Email: <a href="#">MarketingDoor2DoorLLC@gmail.com</a></p>
+          </div>
+
+          <div class="footer_socialmedia">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 category_list">
+          <h6>Shop by Category</h6>
+
+          <ul>
+            <li class="footerMenu_title">
+              <a href="#">Advertising & Sales</a>
+            </li>
+            <li><a href="#">Apparel</a></li>
+            <li><a href="#">Detailling Supplies</a></li>
+            <li><a href="#">Envelops & Forms</a></li>
+            <li><a href="#">Flags</a></li>
+            <li><a href="#">Key Tags</a></li>
+            <li><a href="#">Key Storage</a></li>
+            <li><a href="#">License Plate Accessories</a></li>
+            <li><a href="#">Personalized Products</a></li>
+            <li><a href="#">Safety & Personal Protection</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Windshield Marketing</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Seasonal</a></li>
+            <li><a href="#">Shop Supplies</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ourComany_list">
+          <h6>Our Company</h6>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Catalog Request</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Terms &Condition</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 help_info_list">
+          <h6>Help & Info</h6>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">ADA Compliance</a></li>
+            <li><a href="#">Online Catalog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-----Footer Menubar Section End------>
+
+    <hr class="container" />
+
+    <!-----Footer Copyright Section Start---->
+    <div class="container copyright-section">
+      <div class="copyright_text">
+        <h5>Copyright © 2022 Marketing Door2Door</h5>
+      </div>
+
+      <div class="creditCard_image">
+        <img
+          class="creditCard_img"
+          src="/assets/images/cedit_card/credit_cardlogos.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-----Footer Copyright Section End---->
+  </footer>
+  <!-----Footer End----->
+  </body>
+</html>

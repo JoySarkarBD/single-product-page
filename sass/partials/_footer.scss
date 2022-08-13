@@ -1,0 +1,364 @@
+.newsletter_section {
+    background: url(/assets/images/background/newsletter_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 48px;
+    padding-bottom: 62px;
+    margin-top: 50px;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 0;
+      color: $textColor;
+      font-weight: 700;
+      font-size: 36px;
+    }
+  
+    h4 {
+      text-align: center;
+      padding-bottom: 20px;
+      color: $textColor;
+  
+      @media #{$mobileLarge} {
+        font-size: 14px;
+      }
+  
+      @media #{$mobileMedium} {
+        font-size: 12px;
+      }
+    }
+  
+    h6 {
+      text-align: center;
+      margin-bottom: 0;
+      color: $textColor;
+  
+      @media #{$mobileLarge} {
+        font-size: 14px;
+      }
+  
+      @media #{$mobileMedium} {
+        font-size: 12px;
+      }
+    }
+  }
+  
+  .subscribe_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    @media #{$mobileLarge} {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .subscribe_section form input {
+    color: #56778f;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 14px;
+    outline: 0;
+    margin-top: 10px;
+    height: 36px;
+  
+    @media #{$mobileLarge} {
+      width: 100%;
+    }
+  
+    @media #{$mobileMedium} {
+      width: 100%;
+    }
+  }
+  
+  .subscribe_section form select {
+    color: #56778f;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    padding: 5px 10px;
+    outline: 0;
+    margin-top: 10px;
+  
+    @media #{$mobileLarge} {
+      width: 100%;
+    }
+  
+    @media #{$mobileMedium} {
+      width: 100%;
+    }
+  }
+  
+  .newsletter_submitBtn {
+    padding: 5px 10px;
+    background: $thirdBtnColor;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    height: 36px;
+    transition: all 0.5s ease-in-out;
+  
+    @media #{$mobileLarge} {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    @media #{$mobileMedium} {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  .newsletter_submitBtn:hover {
+    background: $secondaryBtnColor;
+  }
+  
+  .fa-paper-plane:before {
+    color: #ffffff;
+  }
+  
+  //============Footer Menubar Style==============//
+  .footer_menubar {
+    margin-top: 60px;
+  }
+  
+  .company_info {
+    text-align: left;
+  
+    @media #{$tablet} {
+      margin-bottom: 50px;
+    }
+  
+    @media #{$mobileLarge} {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  
+    @media #{$mobileMedium} {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  
+    .footer_menu_logo {
+      max-width: 300px;
+      max-height: 90px;
+  
+      @media #{$mobileLarge} {
+        margin: 0 auto;
+      }
+  
+      @media #{$mobileMedium} {
+        margin: 0 auto;
+      }
+  
+      .footer_menu_logoImg {
+        width: 100%;
+      }
+    }
+  
+    .company_address {
+      @media #{$mobileLarge} {
+        text-align: center;
+      }
+  
+      @media #{$mobileMedium} {
+        text-align: center;
+      }
+  
+      h6 {
+        color: $textColor;
+        font-size: 14px;
+        font-weight: 400;
+      }
+  
+      p {
+        color: $textColor;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 0 !important;
+      }
+  
+      .fa-mobile:before {
+        color: #000;
+      }
+  
+      p a {
+        text-decoration: none;
+        color: $textColor;
+        transition: all 0.5s ease-in-out;
+      }
+  
+      p a:hover {
+        color: $thirdTextColor;
+      }
+    }
+  
+    .footer_socialmedia {
+      padding-top: 15px;
+  
+      a {
+        i.fa-facebook-f:before,
+        i.fa-instagram:before,
+        i.fa-whatsapp:before,
+        i.fa-twitter:before,
+        i.fa-youtube:before {
+          color: $thirdTextColor;
+          font-size: 22px;
+          cursor: pointer;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  
+  .category_list {
+    text-align: left;
+  
+    @media #{$tablet} {
+      margin-bottom: 50px;
+    }
+  
+    @media #{$mobileLarge} {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  
+    @media #{$mobileMedium} {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  
+    h6 {
+      color: $thirdTextColor;
+      padding-left: 32px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  
+    ul li a {
+      text-decoration: none;
+      color: $textColor;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    ul li a:hover {
+      color: $thirdTextColor;
+    }
+  }
+  
+  .ourComany_list {
+    text-align: left;
+  
+    @media #{$tablet} {
+      margin-bottom: 50px;
+    }
+  
+    @media #{$mobileLarge} {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  
+    @media #{$mobileMedium} {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  
+    h6 {
+      color: $thirdTextColor;
+      padding-left: 32px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  
+    ul li a {
+      text-decoration: none;
+      color: $textColor;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    ul li a:hover {
+      color: $thirdTextColor;
+    }
+  }
+  
+  .help_info_list {
+    text-align: left;
+  
+    @media #{$tablet} {
+      margin-bottom: 50px;
+    }
+  
+    @media #{$mobileLarge} {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  
+    @media #{$mobileMedium} {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  
+    h6 {
+      color: $thirdTextColor;
+      padding-left: 32px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  
+    ul li a {
+      text-decoration: none;
+      color: $textColor;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    ul li a:hover {
+      color: $thirdTextColor;
+    }
+  }
+  
+  .copyright-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  
+    @media #{$mobileLarge} {
+      flex-direction: column;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    @media #{$mobileMedium} {
+      flex-direction: column;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .copyright_text h5 {
+      color: $fourthTextColor;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  
+    .creditCard_image {
+      max-width: 300px;
+      max-height: 39px;
+      cursor: pointer;
+  
+      @media #{$mobileLarge} {
+        padding: 20px 0;
+      }
+  
+      .creditCard_img {
+        width: 100%;
+      }
+    }
+  }
+  

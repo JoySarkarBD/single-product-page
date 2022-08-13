@@ -1,0 +1,119 @@
+.top_nav_section {
+    background: $secondaryBgColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+
+    .announcement_text {
+        text-align: center;
+        color: $backgroundColor;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+
+    .top_nav_items {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .language_btn,
+        .money_btn,
+        .account_btn {
+            border: 0;
+            outline: 0;
+            background: transparent;
+            color: $backgroundColor;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 15px;
+        }
+    }
+
+
+    .language_dropdown,
+    .money_dropdown {
+
+        ul.dropdown-menu {
+            background: $backgroundColor;
+            min-width: 0 !important;
+            width: 70px !important;
+            text-align: right;
+            padding: 5px 5px;
+            margin-top: 10px !important;
+            border: 0;
+            box-shadow: 0px 0px 24px rgb(0 0 0 / 8%);
+            z-index: 15;
+
+            .dropdown-item {
+                padding: 0;
+                color: $textColor;
+                font-weight: 600;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .dropdown-item:hover {
+                color: $thirdTextColor;
+            }
+        }
+
+    }
+
+
+    .account_dropdown {
+
+        .dropdown-menu {
+            background: $backgroundColor;
+            min-width: 0 !important;
+            width: 240px !important;
+            height: 272px;
+            text-align: center;
+            padding: 5px 5px;
+            margin-top: 10px !important;
+            border: 0;
+            box-shadow: 0px 0px 24px rgb(0 0 0 / 8%);
+            z-index: 15;
+
+            input {
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid $primaryBtnColor;
+                outline: 0;
+                color: $fourthTextColor;
+            }
+
+            .account_login_btn {
+                background: $thirdBtnColor;
+                color: $backgroundColor;
+                border-radius: 10px;
+            }
+
+            h6 {
+                color: $textColor;
+                text-align: left;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            a {
+                color: $textColor;
+                text-align: left;
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: none;
+                transition: all 0.5s ease-in-out;
+            }
+
+            a:hover {
+                color: $thirdBgColor;
+            }
+
+        }
+
+    }
+}
